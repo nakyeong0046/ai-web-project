@@ -2,51 +2,50 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>AI 활용 웹 콘텐츠 제작 프로젝트</title>
+  <title>경찰경호보안과 전공자를 위한 교도관 진로 AI 활용 콘텐츠</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>ChatGPT를 활용한 웹 콘텐츠 제작 프로젝트</h1>
-    <p>AI를 활용하여 웹 콘텐츠를 기획하고 제작한 과제입니다.</p>
-  </header>
+<header class="hero">
+  <h1>경찰경호보안과 전공자를 위한 교도관 진로 AI 활용 콘텐츠</h1>
+  <p>전공 지식을 바탕으로 교도관 진로를 탐색하고 준비하기 위한 웹 콘텐츠 프로젝트</p>
+</header>
 
-  <section>
-    <h2>프로젝트 소개</h2>
-    <p>
-      본 웹사이트는 ChatGPT를 활용하여 웹 콘텐츠를 기획하고
-      HTML, CSS, JavaScript를 이용해 구현한 프로젝트입니다.
-    </p>
-  </section>
+<section>
+  <h2>프로젝트 소개</h2>
+  <p>
+    본 웹사이트는 경찰경호보안과 전공자가 관심 진로인 교도관 직무를 이해하고 준비하는 데 있어,
+    AI를 활용한 정보 정리와 아이디어 도출 과정을 웹 콘텐츠로 구현한 프로젝트입니다.
+    HTML, CSS, JavaScript를 활용하여 사용자와 상호작용하는 웹페이지를 제작하였습니다.
+  </p>
+</section>
 
-  <section>
-    <h2>AI 활용 내용</h2>
-    <ul>
-      <li>ChatGPT를 활용한 아이디어 기획</li>
-      <li>콘텐츠 구조 설계</li>
-      <li>웹 페이지 문구 작성</li>
-    </ul>
-  </section>
+<section>
+  <h2>전공·진로 연계 AI 활용 내용</h2>
+  <ul>
+    <li>교정학 및 형사정책 관련 개념 정리 보조</li>
+    <li>교도관 직무 이해를 위한 상황 분석 아이디어 도출</li>
+    <li>시험 및 면접 대비 질문 구성 보조</li>
+    <li>교정 현장 사례를 바탕으로 한 대응 시나리오 구상</li>
+  </ul>
+</section>
 
-  <section>
-    <h2>AI 활용 팁</h2>
-    <button onclick="showTip()">AI 활용 팁 보기</button>
-    <p id="tip"></p>
-  </section>
-  
-  <section style="margin-top:40px;">
-  <h2>AI 추천 아이디어</h2>
-  <p id="aiResult">버튼을 눌러 AI 추천 아이디어를 확인해보세요.</p>
-  <button onclick="showIdea()">AI 추천 보기</button>
+<section style="margin-top:40px;">
+  <h2>교도관 진로 AI 추천 아이디어</h2>
+  <p id="aiResult">버튼을 눌러 교도관 진로 관련 AI 활용 아이디어를 확인해보세요.</p>
+  <button onclick="showIdea()">교도관 진로 아이디어 보기</button>
 </section>
 
 <script>
   function showIdea() {
     const ideas = [
-      "AI를 활용한 콘텐츠 기획 도우미 웹페이지",
-      "사용자 목적에 맞는 AI 활용 사례 추천",
-      "AI를 활용한 학습 정리 및 요약 페이지"
+      "교정 현장 상황별 수용자 대응 시뮬레이션 아이디어",
+      "교도관 면접 대비 상황 질문 생성 및 답변 연습",
+      "교정학 핵심 개념을 요약해주는 학습 보조 도구",
+      "수용자 관리 및 교정 프로그램 사례 분석 아이디어",
+      "교도관 직무 이해를 돕는 가상 상황 시나리오 구성"
     ];
 
     const randomIdea = ideas[Math.floor(Math.random() * ideas.length)];
@@ -54,10 +53,9 @@
   }
 </script>
 
-  <footer>
-    <p>제작자: 나경</p>
-  </footer>
+<footer>
+  <p>제작자: 나경 (경찰경호보안과)</p>
+</footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
