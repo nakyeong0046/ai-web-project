@@ -34,8 +34,15 @@
 
 <section style="margin-top:40px;">
   <h2>교도관 진로 AI 추천 아이디어</h2>
-  <p id="aiResult">버튼을 눌러 교도관 진로 관련 AI 활용 아이디어를 확인해보세요.</p>
-  <button onclick="showIdea()">교도관 진로 아이디어 보기</button>
+  <p>관심 있는 준비 분야를 선택해보세요.</p>
+
+  <div style="margin-bottom:15px;">
+    <button onclick="showIdea('field')">👮‍♂️ 교정 현장</button>
+    <button onclick="showIdea('exam')">📚 시험 준비</button>
+    <button onclick="showIdea('interview')">🗣️ 면접 대비</button>
+  </div>
+
+  <p id="aiResult">선택한 분야에 맞는 AI 활용 아이디어가 여기에 표시됩니다.</p>
 </section>
 
 <script>
