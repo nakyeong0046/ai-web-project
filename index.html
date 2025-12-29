@@ -34,6 +34,25 @@
     <button onclick="showTip()">AI 활용 팁 보기</button>
     <p id="tip"></p>
   </section>
+  
+  <section style="margin-top:40px;">
+  <h2>AI 추천 아이디어</h2>
+  <p id="aiResult">버튼을 눌러 AI 추천 아이디어를 확인해보세요.</p>
+  <button onclick="showIdea()">AI 추천 보기</button>
+</section>
+
+<script>
+  function showIdea() {
+    const ideas = [
+      "AI를 활용한 콘텐츠 기획 도우미 웹페이지",
+      "사용자 목적에 맞는 AI 활용 사례 추천",
+      "AI를 활용한 학습 정리 및 요약 페이지"
+    ];
+
+    const randomIdea = ideas[Math.floor(Math.random() * ideas.length)];
+    document.getElementById("aiResult").innerText = randomIdea;
+  }
+</script>
 
   <footer>
     <p>제작자: 나경</p>
